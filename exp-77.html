@@ -1,0 +1,102 @@
+<!--Demonstrate uses of arrays and strings in Javascript.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: salmon;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Arrays and strings in javascript</h1>
+    <h3>Arrays and its uses</h3>
+
+    <script defer>
+        const arr = ["vijaya", 1226, "IT", "svecw"]
+        let i = 0;
+        while (i < arr.length) {
+            document.write(arr[i])
+            document.write("<pre>")
+            i++;
+        }
+        document.write("<br>")
+        arr.shift()
+        let j = 0;
+        while (j < arr.length) {
+            document.write(arr[j]);
+            document.write("<pre>")
+            j++;
+        }
+        document.write("<br>")
+        arr.pop()
+        arr.unshift("greg")
+        k = 0;
+        while (k < arr.length) {
+            document.write(arr[k]);
+            document.write("<pre>")
+            k++
+
+        }
+        document.write("<br>")
+        arr.unshift("matt")
+        arr.push("vijaya")
+        m = 0;
+        while (m < arr.length) {
+            if (arr[m] == "mary") {
+                break;
+            }
+            document.write(arr[m]);
+            document.write("<pre>")
+            m++;
+        }
+        document.write("<br>")
+        l = 0
+        while (l < arr.length) {
+            document.write(arr[l]);
+            document.write("<pre>")
+            l++
+        }
+        document.write("<br>")
+        newpeop = arr.slice(1)
+        n = 0;
+        while (n < newpeop.length) {
+            document.write(newpeop[n]);
+            document.write("<pre>")
+            n++;
+        }
+        document.write("<br>")
+        let txt = "Strings in javascript"
+        document.write(txt)
+        document.write("<br>")
+        document.write("Now,demonstrating string methods in javascript");
+        document.write("<br>")
+        let newText = txt.replace("Now", "Today");
+        document.write(newText)
+        document.write("<br>")
+        document.write(txt.toUpperCase());
+        document.write("<br>")
+        let text1 = "Hello";
+        let text2 = "World";
+        let text3 = text1.concat(text2);
+        document.write(text3)
+        document.write("<br>")
+        let test = "1"
+        let padded = test.padStart(4, "0");
+        document.write(padded)
+        document.write("<br>")
+    </script>
+
+</body>
+
+</html>
